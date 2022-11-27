@@ -158,6 +158,8 @@ RULENAME="date_r2c2",EXTRACTION="([Tt]he )?(%reDayWordTh|%reDayNumberTh|%reDayNu
 RULENAME="date_r3a",EXTRACTION="%reWeekday[,]? (%reMonthLong|%reMonthShort) (%reDayWordTh|%reDayNumberTh|%reDayNumber)",NORM_VALUE="UNDEF-year-%normMonth(group(2))-%normDay(group(5))"
 RULENAME="date_r3b",EXTRACTION="%reWeekday[,]? (%reMonthLong|%reMonthShort) (%reDayWordTh|%reDayNumberTh|%reDayNumber)[,]? %reYear4Digit",NORM_VALUE="group(9)-%normMonth(group(2))-%normDay(group(5))"
 
+RULENAME="date_r3c",EXTRACTION="FY (%reYear4Digit)",NORM_VALUE="group(1)-01-01"
+
 // date_r4
 // EXAMPLE r4a_1: September 14 and 18, 2010 (find September 14 2010)
 // EXAMPLE r4b_1: September 14 and 18, 2010 (find September 18 2010)

@@ -26,7 +26,7 @@ RUN apt-get update && apt-get -y install \
 # NOTE: Downloads english and german parameter files for the tree tagger, more language options at:
 #       https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/#parfiles
 WORKDIR /srv/app/treetagger
-RUN wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger-linux-3.2.2.tar.gz
+RUN wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger-linux-3.2.4.tar.gz
 RUN wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tagger-scripts.tar.gz
 RUN wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/install-tagger.sh
 RUN wget https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/english.par.gz
