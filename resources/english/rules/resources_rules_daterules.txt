@@ -19,6 +19,7 @@ RULENAME="date_historic_1a-BCADhint",EXTRACTION="(%reApproximate )?%reYearBC %re
 RULENAME="date_historic_1b-BCADhint",EXTRACTION="(%reApproximate )?%reYearPrefix %reYearBC",NORM_VALUE="%normYearPrefix(group(3))%normYearBC(group(4))",NORM_MOD="%normApprox4Dates(group(2))"
 RULENAME="x_date_historic_1c-BCADhint",EXTRACTION="(%reApproximate )?%reYearBC%reAndOrTo%reYearBC %reYearPrefix",NORM_VALUE="%normYearPrefix(group(6))%normYearBC(group(3))",NORM_MOD="%normApprox4Dates(group(2))",OFFSET="group(0)-group(3)"
 
+
 // historic dates; month granularity
 // EXAMPLE historic_2a-BCADhint:   March 190 BC  (1- to 4-digit year)
 // EXAMPLE historic_2b:            March 190     (3-digit year)
@@ -191,11 +192,12 @@ RULENAME="date_r61",EXTRACTION="(the|that) weekend",NORM_VALUE="UNDEF-last-week-
 RULENAME="date_r7a",EXTRACTION="(%reMonthLong|%reMonthShort)( of | )%reYear4Digit",NORM_VALUE="group(5)-%normMonth(group(1))"
 RULENAME="date_r7b",EXTRACTION="(%reMonthLong|%reMonthShort)( of | )%reNumWordTeen( |-)%reNumWord2D",NORM_VALUE="%normDurationNumber(group(5))%normDurationNumber(group(7))-%normMonth(group(1))"
 RULENAME="date_r7c",EXTRACTION="(%reMonthLong|%reMonthShort) (and|or|to|until) (%reMonthLong|%reMonthShort) %reYear4Digit",NORM_VALUE="group(8)-%normMonth(group(1))",OFFSET="group(1)-group(1)"
-
+RULENAME="date_r7d",EXTRACTION="%reMonthNumber/%reYear2Digit",NORM_VALUE="UNDEF-centurygroup(3)-%normMonth(group(1)))"
+RULENAME="date_r7e",EXTRACTION="%reMonthNumber/%reYear4Digit",NORM_VALUE="group(3)-%normMonth(group(1)))"
 // date_r8
 // EXAMPLE r8a_1: November next year
 // EXAMPLE r8a_2: May last year
-// EXAMPLE 
+
 RULENAME="date_r8a",EXTRACTION="%reMonthLong (the )?%reThisNextLast year",NORM_VALUE="UNDEF-%normThisNextLast(group(3))-year-%normMonth(group(1))"
 RULENAME="date_r8b",EXTRACTION="%reMonthLong of (that|the same) year",NORM_VALUE="UNDEF-REF-year-MINUS-0-%normMonth(group(1))"
 
