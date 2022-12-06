@@ -112,8 +112,8 @@ RULENAME="date_r0b",EXTRACTION="(%reMonthNumber-%reDayNumber-%reYear2Digit)",NOR
 RULENAME="date_r0c",EXTRACTION="%reMonthNumber/%reDayNumber/%reYear4Digit",NORM_VALUE="group(3)-%normMonth(group(1))-%normDay(group(2))"
 RULENAME="date_r0d",EXTRACTION="%reMonthNumber/%reDayNumber/%reYear2Digit",NORM_VALUE="UNDEF-centurygroup(3)-%normMonth(group(1))-%normDay(group(2))"
 RULENAME="date_r0e",EXTRACTION="%reMonthNumber-%reDayNumber( \(.*?\))",NORM_VALUE="UNDEF-year-%normMonth(group(1))-%normDay(group(2))",OFFSET="group(1)-group(2)"
-RULENAME="date_r0f",EXTRACTION="%reYear4Digit%reMonthNumber%reDayNumber",NORM_VALUE="group(1)-group(2)-group(3)"
-RULENAME="date_r0g",EXTRACTION="%reDayNumber[\.]%reMonthNumber[\.]%reYear2Digit",NORM_VALUE="UNDEF-centurygroup(3)-%normMonth(group(2))-%normDay(group(1))"
+// RULENAME="date_r0f",EXTRACTION="%reYear4Digit%reMonthNumber%reDayNumber",NORM_VALUE="group(1)-group(2)-group(3)"
+RULENAME="date_r0g",EXTRACTION="%reDayNumber[\.]%reMonthNumber[\.]%reYear2Digit",NORM_VALUE="group(3)-%normMonth(group(2))-%normDay(group(1))"
 RULENAME="date_r0h",EXTRACTION="%reDayNumber[\.]%reMonthNumber[\.]%reYear4Digit",NORM_VALUE="group(3)-%normMonth(group(2))-%normDay(group(1))"
 
 
@@ -192,7 +192,7 @@ RULENAME="date_r61",EXTRACTION="(the|that) weekend",NORM_VALUE="UNDEF-last-week-
 RULENAME="date_r7a",EXTRACTION="(%reMonthLong|%reMonthShort)( of | )%reYear4Digit",NORM_VALUE="group(5)-%normMonth(group(1))"
 RULENAME="date_r7b",EXTRACTION="(%reMonthLong|%reMonthShort)( of | )%reNumWordTeen( |-)%reNumWord2D",NORM_VALUE="%normDurationNumber(group(5))%normDurationNumber(group(7))-%normMonth(group(1))"
 RULENAME="date_r7c",EXTRACTION="(%reMonthLong|%reMonthShort) (and|or|to|until) (%reMonthLong|%reMonthShort) %reYear4Digit",NORM_VALUE="group(8)-%normMonth(group(1))",OFFSET="group(1)-group(1)"
-RULENAME="date_r7d",EXTRACTION="%reMonthNumber/%reYear2Digit",NORM_VALUE="UNDEF-centurygroup(2)-%normMonth(group(1)))"
+RULENAME="date_r7d",EXTRACTION="%reMonthNumber/%reYear2Digit",NORM_VALUE="group(2)-%normMonth(group(1)))"
 RULENAME="date_r7e",EXTRACTION="%reMonthNumber/%reYear4Digit",NORM_VALUE="group(2)-%normMonth(group(1)))"
 
 
