@@ -14,6 +14,7 @@
 "JAN.","01"
 "January","01"
 "january","01"
+"JANUARY", "01"
 // February
 "Feb","02"
 "feb","02"
@@ -23,6 +24,7 @@
 "FEB.","02"
 "February","02"
 "february","02"
+"FEBRUARY", "02"
 // March
 "Mar","03"
 "mar","03"
@@ -32,6 +34,7 @@
 "MAR.","03"
 "March","03"
 "march","03"
+"MARCH", "03"
 // April
 "Apr","04"
 "apr","04"
@@ -41,6 +44,7 @@
 "APR","04"
 "April","04"
 "april","04"
+"APRIL", "04"
 // May
 "May","05"
 "may","05" 
@@ -57,6 +61,7 @@
 "JUN.","06"
 "June","06"
 "june","06"
+"JUNE", "06"
 // July
 "Jul","07"
 "jul","07"
@@ -66,6 +71,7 @@
 "JUL.","07"
 "July","07"
 "july","07"
+"JULY", "07"
 // August
 "Aug","08"
 "aug","08"
@@ -75,6 +81,7 @@
 "AUG.","08"
 "August","08"
 "august","08"
+"AUGUST", "08"
 // September
 "Sep","09"
 "sep","09"
@@ -90,6 +97,7 @@
 "SEPT.","09"
 "September","09"
 "september","09"
+"SEPTEMBER", "09"
 // October
 "Oct","10"
 "oct","10"
@@ -99,6 +107,7 @@
 "OCT.","10"
 "October","10"
 "october","10"
+"OCTOBER", "10"
 // November
 "Nov","11"
 "nov","11"
@@ -108,6 +117,7 @@
 "NOV.","11"
 "November","11"
 "november","11"
+"NOVEMBER", "11"
 // December
 "Dec","12"
 "dec","12"
@@ -117,6 +127,7 @@
 "DEC.","12"
 "December","12"
 "december","12"
+"DECEMBER", "12"
 // January
 "1","01"
 "01","01"
