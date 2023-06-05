@@ -36,6 +36,8 @@ RUN sh install-tagger.sh
 # Clone heideltime itself and set up the location of the tagger in a new config file
 WORKDIR /srv/app
 RUN git clone https://github.com/spencer-hong/heideltime.git
+
+
 RUN cp heideltime/conf/config.props .
 RUN sed -i 's|^treeTaggerHome =.*$|treeTaggerHome = /srv/app/treetagger|g' config.props
 
